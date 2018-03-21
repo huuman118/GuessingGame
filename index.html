@@ -4,46 +4,48 @@
     <title>Guessing Game</title>
 
     <!-- Bootstrap and CSS here-->
-    <linkn rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- why do we get rid of some of this extra stuff ntegrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" -->
   </head>
   <body>
 
-      <div id='app'>
+      <div id='app' class='center'>
 
-        <div id='headers'>
+        <div id='headers' >
           <!-- Title and subtitles! -->
           <h1>Guessing Game </h1>
           <h2>Guess a number (integer) between 1 and 100</h2>
         </div>
 
         <div id='main'>
-          <div id='input-parent'>
+          <div id='input-parent' class='center'>
             <!-- Player's guess input, and submit button -->
-            <label>Number Guessed:</label>
-            <input type='number' placeholder='Number?'>
-            <input type='submit'>
+            <label>Guess Number Here:</label>
+            <input id='player-input' class='center' placeholder='#' maxlength='3' autofocus=autofocus></input>
+            <button id='submit'>Go!</button>
           </div>
 
-          <div id='guesses'>
+          <div id='guesses' class='center'>
             <!-- unordered list of guesses -->
-            <p>5 last guesses:</p>
+            <label>5 last guesses:</label>
+            <br>
             <ul>
-              <li>Guess 1</li>
-              <li>Guess 2</li>
-              <li>Guess 3</li>
-              <li>Guess 4</li>
-              <li>Guess 5</li>
+              <li class='guess-item'>#</li>
+              <li class='guess-item'>#</li>
+              <li class='guess-item'>#</li>
+              <li class='guess-item'>#</li>
+              <li class='guess-item'>#</li>
             </ul>
           </div>
 
-          <div id="menu-btns">
+          <div id="menu-btns" class='center'>
             <!-- reset and hint buttons -->
-                <button>
-                  reset
+                <button id="resetbutton">
+                  Reset
                 </button>
-                <button>
-                  hint
+                <button id="hintbutton">
+                  Hint
                 </button>
           </div>
         </div>
@@ -51,17 +53,17 @@
 
 
 
-    <div id='footer'>
-        <div>
-          <div class=''>
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
             <img src='fa.png'></img>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <h4>Project by Huu Nguyen</h4>
           </div>
 
-          <div class=''>
+          <div class='col-sm-4'>
             <img src='gh.png'></img>
           </div>
 
