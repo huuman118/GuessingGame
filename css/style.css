@@ -2,7 +2,7 @@
     box-sizing: 'border-box'
   }
   body {
-    background-image: url('question.jpg');
+    background-image: url('../img/question.jpg');
   }
   #app {
     background-color: rgba(256, 256, 256, 0.75);
